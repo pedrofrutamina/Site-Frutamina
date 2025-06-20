@@ -1,0 +1,1146 @@
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Frutamina - Atacadista de hortifruti de qualidade em São Paulo. Fornecemos abacates, melões, melancias, legumes e verduras frescos para restaurantes, hotéis e supermercados. Mais de 15 anos de experiência no mercado.">
+    <meta name="keywords" content="atacadista hortifruti, frutas verduras São Paulo, abacates, melões, melancias, fornecedor restaurantes, CEAGESP, Grupo De Marchi">
+    <meta name="author" content="Frutamina Comercial Agrícola Ltda">
+    <meta property="og:title" content="Frutamina - Atacadista de Hortifruti de Qualidade">
+    <meta property="og:description" content="Fornecedor especializado em hortifruti para empresas em São Paulo. Produtos frescos e de alta qualidade com mais de 15 anos de experiência.">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="pt_BR">
+    <meta name="robots" content="index, follow">
+    <meta name="googlebot" content="index, follow">
+    <link rel="canonical" href="https://www.frutamina.com.br/">
+    <title>Frutamina - Atacadista de Hortifruti de Qualidade em São Paulo</title>
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&family=Open+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome para ícones -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <!-- CSS Responsivo Externo -->
+    <link rel="stylesheet" href="styles.css">
+    
+    <style>
+/* Reset e configurações básicas */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    /* Cores principais */
+    --primary-green: #2c5530;
+    --secondary-green: #4a7c59;
+    --light-green: #6b9b76;
+    --accent-blue: #2563eb;
+    --accent-blue-hover: #1d4ed8;
+    
+    /* Cores neutras */
+    --text-dark: #2d3748;
+    --text-medium: #4a5568;
+    --text-light: #718096;
+    --bg-light: #f7fafc;
+    --bg-white: #ffffff;
+    --border-light: #e2e8f0;
+    
+    /* Tipografia */
+    --font-heading: 'Montserrat', sans-serif;
+    --font-body: 'Open Sans', sans-serif;
+    
+    /* Sombras */
+    --shadow-sm: 0 1px 3px 0 rgba(0, 0, 0, 0.1 ), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+    --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+    --shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+    
+    /* Transições */
+    --transition-fast: 0.15s ease-in-out;
+    --transition-normal: 0.3s ease-in-out;
+    --transition-slow: 0.5s ease-in-out;
+}
+
+body {
+    font-family: var(--font-body);
+    line-height: 1.7;
+    color: var(--text-dark);
+    background-color: var(--bg-white);
+    font-weight: 400;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 24px;
+}
+
+/* Smooth scrolling */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Header */
+.header {
+    background: var(--bg-white);
+    padding: 20px 0;
+    box-shadow: var(--shadow-md);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    transition: var(--transition-normal);
+}
+
+.nav-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+
+.logo {
+    flex: 0 0 auto;
+}
+
+.logo-img {
+    height: 65px;
+    width: auto;
+    transition: var(--transition-normal);
+}
+
+.logo-img:hover {
+    transform: scale(1.05);
+}
+
+/* Menu de navegação */
+.nav-menu {
+    display: flex;
+    gap: 40px;
+    align-items: center;
+    flex: 1;
+    justify-content: center;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: var(--text-dark);
+    font-weight: 500;
+    font-size: 16px;
+    padding: 12px 20px;
+    border-radius: 8px;
+    transition: var(--transition-normal);
+    position: relative;
+    font-family: var(--font-heading);
+}
+
+.nav-link::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 8px;
+    left: 50%;
+    background-color: var(--primary-green);
+    transition: var(--transition-normal);
+    transform: translateX(-50%);
+}
+
+.nav-link:hover {
+    color: var(--primary-green);
+    background-color: rgba(44, 85, 48, 0.05);
+}
+
+.nav-link:hover::after {
+    width: 60%;
+}
+
+.nav-link.active {
+    background-color: var(--primary-green);
+    color: white;
+}
+
+.nav-link.active::after {
+    width: 0;
+}
+
+/* Logo De Marchi */
+.logo-demarchi {
+    flex: 0 0 auto;
+}
+
+.demarchi-img {
+    height: 85px;
+    width: auto;
+    transition: var(--transition-normal);
+}
+
+.demarchi-img:hover {
+    transform: scale(1.05);
+}
+
+/* Hero Section */
+.hero {
+    background: linear-gradient(135deg, var(--primary-green) 0%, var(--secondary-green) 50%, var(--light-green) 100%);
+    color: white;
+    padding: 120px 0;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="grain" width="100" height="100" patternUnits="userSpaceOnUse"><circle cx="25" cy="25" r="1" fill="white" opacity="0.1"/><circle cx="75" cy="75" r="1" fill="white" opacity="0.1"/><circle cx="50" cy="10" r="0.5" fill="white" opacity="0.1"/><circle cx="10" cy="60" r="0.5" fill="white" opacity="0.1"/><circle cx="90" cy="40" r="0.5" fill="white" opacity="0.1"/></pattern></defs><rect width="100" height="100" fill="url(%23grain )"/></svg>');
+    pointer-events: none;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 1;
+}
+
+.hero-title {
+    font-family: var(--font-heading);
+    font-size: 3.5rem;
+    font-weight: 800;
+    margin-bottom: 24px;
+    line-height: 1.1;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.hero-subtitle {
+    font-size: 1.3rem;
+    margin-bottom: 40px;
+    opacity: 0.95;
+    font-weight: 300;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.cta-button {
+    display: inline-block;
+    background: var(--accent-blue);
+    color: white;
+    padding: 18px 36px;
+    text-decoration: none;
+    border: none;
+    border-radius: 50px;
+    font-weight: 600;
+    font-size: 16px;
+    font-family: var(--font-heading);
+    transition: var(--transition-normal);
+    box-shadow: var(--shadow-lg);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.cta-button:hover {
+    background: var(--accent-blue-hover);
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-xl);
+}
+
+/* Seções gerais */
+.section {
+    padding: 100px 0;
+}
+
+.section-title {
+    font-family: var(--font-heading);
+    font-size: 2.8rem;
+    text-align: center;
+    margin-bottom: 20px;
+    color: var(--primary-green);
+    font-weight: 700;
+    position: relative;
+}
+
+.section-title::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 4px;
+    background: linear-gradient(90deg, var(--accent-blue), var(--accent-blue-hover));
+    border-radius: 2px;
+}
+
+.section-subtitle {
+    text-align: center;
+    font-size: 1.2rem;
+    margin-bottom: 60px;
+    color: var(--text-medium);
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    font-weight: 300;
+}
+
+/* Sobre Nós */
+.about {
+    background: var(--bg-light);
+}
+
+.about-content {
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.about-content p {
+    font-size: 1.15rem;
+    margin-bottom: 28px;
+    line-height: 1.8;
+    color: var(--text-medium);
+}
+
+.about-content p:last-child {
+    margin-bottom: 0;
+}
+
+/* Produtos */
+.products {
+    background: var(--bg-white);
+}
+
+.products-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 40px;
+    margin-bottom: 60px;
+}
+
+.product-card {
+    background: white;
+    padding: 40px 30px;
+    border-radius: 16px;
+    box-shadow: var(--shadow-md);
+    text-align: center;
+    transition: var(--transition-normal);
+    border: 1px solid var(--border-light);
+    position: relative;
+    overflow: hidden;
+}
+
+.product-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: linear-gradient(90deg, var(--primary-green), var(--secondary-green));
+}
+
+.product-card:hover {
+    transform: translateY(-8px);
+    box-shadow: var(--shadow-xl);
+}
+
+.product-card h3 {
+    font-family: var(--font-heading);
+    font-size: 1.6rem;
+    color: var(--primary-green);
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+.product-card p {
+    margin-bottom: 30px;
+    line-height: 1.7;
+    color: var(--text-medium);
+    font-size: 1rem;
+}
+
+.product-link {
+    display: inline-block;
+    background: var(--primary-green);
+    color: white;
+    padding: 12px 28px;
+    text-decoration: none;
+    border-radius: 25px;
+    font-weight: 600;
+    font-size: 14px;
+    font-family: var(--font-heading);
+    transition: var(--transition-normal);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.product-link:hover {
+    background: var(--secondary-green);
+    transform: translateY(-1px);
+}
+
+.products-info {
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.products-info p {
+    font-size: 1.15rem;
+    margin-bottom: 20px;
+    line-height: 1.8;
+    color: var(--text-medium);
+}
+
+/* Grupo De Marchi */
+.demarchi-section {
+    background: var(--bg-light);
+}
+
+.demarchi-content {
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.demarchi-content p {
+    font-size: 1.15rem;
+    margin-bottom: 28px;
+    line-height: 1.8;
+    color: var(--text-medium);
+}
+
+/* Contato */
+.contact {
+    background: var(--bg-white);
+}
+
+.contact-info {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 50px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.contact-item {
+    text-align: center;
+    padding: 40px 30px;
+    background: white;
+    border-radius: 16px;
+    box-shadow: var(--shadow-md);
+    transition: var(--transition-normal);
+    border: 1px solid var(--border-light);
+}
+
+.contact-item:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-lg);
+}
+
+.contact-item i {
+    font-size: 2.5rem;
+    color: var(--accent-blue);
+    margin-bottom: 20px;
+    display: block;
+}
+
+.contact-item h3 {
+    font-family: var(--font-heading);
+    font-size: 1.4rem;
+    color: var(--primary-green);
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+
+.contact-item p {
+    font-size: 1.1rem;
+    line-height: 1.7;
+    color: var(--text-medium);
+}
+
+/* Footer */
+.footer {
+    background: var(--primary-green);
+    color: white;
+    padding: 30px 0;
+    text-align: center;
+}
+
+.footer p {
+    font-size: 1rem;
+    opacity: 0.9;
+}
+
+.footer-quicklinks {
+    margin-bottom: 18px;
+}
+
+.footer-quicklinks a {
+    color: white;
+    margin: 0 12px;
+    text-decoration: underline;
+    font-size: 1rem;
+}
+
+/* Animações */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.fade-in-up {
+    animation: fadeInUp 0.6s ease-out;
+}
+
+/* Responsividade */
+@media (max-width: 1024px) {
+    .container {
+        padding: 0 20px;
+    }
+    
+    .nav-menu {
+        gap: 30px;
+    }
+    
+    .hero-title {
+        font-size: 3rem;
+    }
+    
+    .section-title {
+        font-size: 2.4rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .nav-wrapper {
+        flex-direction: column;
+        gap: 25px;
+    }
+    
+    .nav-menu {
+        flex-direction: column;
+        gap: 20px;
+    }
+    
+    .hero {
+        padding: 80px 0;
+    }
+    
+    .hero-title {
+        font-size: 2.2rem;
+    }
+    
+    .hero-subtitle {
+        font-size: 1.1rem;
+    }
+    
+    .section {
+        padding: 60px 0;
+    }
+    
+    .section-title {
+        font-size: 2rem;
+    }
+    
+    .products-grid {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+    
+    .contact-info {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+    
+    .contact-item {
+        padding: 30px 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding: 0 16px;
+    }
+    
+    .hero {
+        padding: 60px 0;
+    }
+    
+    .hero-title {
+        font-size: 1.8rem;
+    }
+    
+    .section-title {
+        font-size: 1.8rem;
+    }
+    
+    .section {
+        padding: 50px 0;
+    }
+    
+    .product-card,
+    .contact-item {
+        padding: 25px 20px;
+    }
+    
+    .cta-button {
+        padding: 15px 30px;
+        font-size: 14px;
+    }
+}
+
+/* Melhorias de acessibilidade */
+@media (prefers-reduced-motion: reduce) {
+    * {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
+    
+    html {
+        scroll-behavior: auto;
+    }
+}
+
+/* Estados de foco para acessibilidade */
+.nav-link:focus,
+.cta-button:focus,
+.product-link:focus {
+    outline: 2px solid var(--accent-blue);
+    outline-offset: 2px;
+}
+
+.fornecedor-card img {
+    max-width: 190px;
+    max-height: 90px;
+    object-fit: contain;
+  }
+
+  .fornecedores-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 32px;
+    justify-content: center;
+    margin-top: 32px;
+  }
+
+  .fornecedor-card {
+    background: #fff;
+    border-radius: 18px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+    padding: 28px 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 220px;
+    min-height: 120px;
+    transition: transform 0.2s, box-shadow 0.2s;
+    text-decoration: none;
+    margin: 0;
+  }
+
+  .fornecedor-card:hover {
+    transform: translateY(-4px) scale(1.04);
+    box-shadow: 0 6px 24px rgba(0,0,0,0.13);
+  }
+
+  .fornecedor-card img {
+    max-width: 180px;
+    max-height: 80px;
+    object-fit: contain;
+    display: block;
+  }
+
+  .clientes-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 32px;
+    justify-content: center;
+    margin-top: 32px;
+  }
+  .cliente-card {
+    background: #fff;
+    border-radius: 18px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+    padding: 28px 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 220px;
+    min-height: 120px;
+    transition: transform 0.2s, box-shadow 0.2s;
+    margin: 0;
+  }
+  .cliente-card img {
+    max-width: 180px;
+    max-height: 80px;
+    object-fit: contain;
+    display: block;
+  }
+
+  /* Menu Hamburguer */
+.hamburger {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    z-index: 1200;
+    margin-left: 8px;
+    transition: background 0.2s;
+}
+.hamburger:focus {
+    outline: 2px solid var(--accent-blue);
+    outline-offset: 2px;
+}
+.hamburger .bar {
+    width: 28px;
+    height: 3.5px;
+    background: var(--primary-green);
+    margin: 4px 0;
+    border-radius: 2px;
+    transition: 0.3s;
+}
+.hamburger.open .bar:nth-child(1) {
+    transform: translateY(7px) rotate(45deg);
+}
+.hamburger.open .bar:nth-child(2) {
+    opacity: 0;
+}
+.hamburger.open .bar:nth-child(3) {
+    transform: translateY(-7px) rotate(-45deg);
+}
+@media (max-width: 900px) {
+    .nav-menu {
+        position: fixed;
+        top: 0;
+        right: 0;
+        height: 100vh;
+        width: 240px;
+        background: #fff;
+        box-shadow: -2px 0 16px rgba(0,0,0,0.08);
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        padding: 80px 24px 24px 24px;
+        gap: 24px;
+        transform: translateX(100%);
+        transition: transform 0.3s cubic-bezier(.77,0,.18,1);
+        z-index: 1100;
+        display: flex;
+    }
+    .nav-menu.open {
+        transform: translateX(0);
+    }
+    .nav-link {
+        font-size: 1.2rem;
+        width: 100%;
+        padding: 16px 0;
+        border-radius: 0;
+        text-align: left;
+    }
+    .nav-wrapper {
+        flex-wrap: wrap;
+    }
+    .hamburger {
+        display: flex;
+    }
+}
+@media (max-width: 480px) {
+    .nav-menu {
+        width: 100vw;
+        padding: 80px 12px 12px 12px;
+    }
+}
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container nav-wrapper">
+            <div class="logo">
+                <img src="imagens/logo-frutamina.png" alt="Logo Frutamina" class="logo-img">
+            </div>
+            <!-- Botão Hamburguer -->
+            <button class="hamburger" id="hamburgerBtn" aria-label="Abrir menu" aria-controls="mainNav" aria-expanded="false">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+            <nav class="nav-menu" id="mainNav">
+                <a href="index.html#home" class="nav-link active">Home</a>
+                <a href="index.html#sobre" class="nav-link">Sobre Nós</a>
+                <a href="index.html#produtos" class="nav-link">Produtos</a>
+                <a href="index.html#contato" class="nav-link">Contato</a>
+            </nav>
+            <div class="logo-demarchi">
+                <a href="https://www.demarchi.com.br/" target="_blank">
+                    <img src="imagens/logo-demarchi.png" alt="Grupo De Marchi" class="demarchi-img">
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content fade-in-up">
+                <h1 class="hero-title">Atacadista de Hortifruti de Qualidade para seu Negócio</h1>
+                <p class="hero-subtitle">Fornecedor especializado para empresas de todos os portes em São Paulo</p>
+                <a href="#produtos" class="cta-button">Conheça Nossos Produtos</a>
+            </div>
+        </div>
+    </section>
+
+      <!-- Produtos -->
+    <section id="produtos" class="products section">
+        <div class="container">
+            <h2 class="section-title">Nossos Produtos</h2>
+            <p class="section-subtitle">A Frutamina oferece uma ampla variedade de produtos frescos e de alta qualidade. Conheça nossas principais categorias:</p>
+            
+            <div class="products-grid">
+                <div class="product-card">
+                    <h3>Abacates</h3>
+                    <p>Diversas variedades de abacates, incluindo Hass, Fuerte, Breda, Fortuna, Fucks, Geada e Margarida.</p>
+                    <a href="abacates.html" class="product-link">Ver Detalhes</a>
+                </div>
+                
+                <div class="product-card">
+                    <h3>Melões</h3>
+                    <p>Variedades nacionais como Amarelo, Pele de Sapo, Cantaloupe, Gália, Orange e Matisse</p>
+                    <a href="meloes.html" class="product-link">Ver Detalhes</a>
+                </div>
+                
+                <div class="product-card">
+                    <h3>Melancias</h3>
+                    <p>Melancia Baby com sementes e sem sementes: tamanho ideal, polpa doce e suculenta, perfeita para o consumidor que busca praticidade sem abrir mão da qualidade.</p>
+                    <a href="melancias.html" class="product-link">Ver Detalhes</a>
+                </div>
+                
+                 <div class="product-card">
+                    <h3>Limão</h3>
+                    <p>Limões frescos, selecionados e de alta acidez, ideais para sucos, temperos, drinks e uso culinário. Qualidade garantida o ano todo.</p>
+                    <a href="limão.html" class="product-link">Ver Detalhes</a>
+                </div>
+
+                <div class="product-card">
+                    <h3>Goiaba</h3>
+                    <p>Goiabas doces e aromáticas, com polpa vermelha ou branca, perfeitas para consumo in natura, sucos, doces e geleias.</p>
+                    <a href="goiaba.html" class="product-link">Ver Detalhes</a>
+                </div>
+
+                <div class="product-card">
+                    <h3>Manga</h3>
+                    <p>Mangas selecionadas das melhores variedades, com polpa suculenta, sabor marcante e baixo teor de fibras. Ótimas para sobremesas, sucos e consumo direto.</p>
+                    <a href="manga.html" class="product-link">Ver Detalhes</a>
+                </div>
+
+                
+            
+            </div>
+            
+            <div class="products-info">
+                <p>Nossos produtos são cuidadosamente selecionados e armazenados para garantir a máxima qualidade e frescor. Trabalhamos com produtores parceiros que seguem as melhores práticas agrícolas.</p>
+                <p>Para cotações e pedidos, entre em contato conosco. Teremos prazer em atender às suas necessidades específicas.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sobre Nós -->
+    <section id="sobre" class="about section">
+        <div class="container">
+            <h2 class="section-title">Sobre Nós</h2>
+            <div class="about-content">
+                <p>A Frutamina é uma empresa especializada no fornecimento de hortifruti de alta qualidade para estabelecimentos comerciais em São Paulo e região. Com mais de 15 anos de experiência no mercado, nos destacamos pela seleção rigorosa dos produtos, logística eficiente e atendimento personalizado.</p>
+                
+                <p>Trabalhamos com uma ampla variedade de frutas, legumes e verduras, atendendo restaurantes, hotéis, supermercados, escolas, hospitais e outros estabelecimentos que buscam produtos frescos e de excelência.</p>
+                
+                <p>Nossa missão é garantir o fornecimento de hortifruti com qualidade superior, contribuindo para o sucesso dos negócios de nossos clientes.</p>
+            </div>
+        </div>
+      </div>
+     <div class="container">
+        <h2 class="section-title">Nossos Fornecedores</h2>
+        <p class="section-subtitle">Trabalhamos com produtores parceiros que compartilham o nosso compromisso com qualidade, frescor e sustentabilidade.</p>
+        
+        <div class="products-grid">
+            <div class="product-card">
+                <h3>Produtores Locais</h3>
+                <p>Parcerias com agricultores da região para garantir frutas, legumes e verduras sempre frescos e de alta qualidade.</p>
+            </div>
+            
+            <div class="product-card">
+                <h3>Grandes Produtores Nacionais</h3>
+                <p>Trabalhamos com os principais polos agrícolas do Brasil para atender em grande escala com variedade e segurança alimentar.</p>
+            </div>
+            
+            <div class="product-card">
+                <h3>Certificação de Qualidade</h3>
+                <p>Nossos fornecedores seguem boas práticas agrícolas, com rastreabilidade e certificações que asseguram a procedência dos produtos.</p>
+            </div>
+        </div>
+      <div class="fornecedores-cards">
+      <a href="https://www.itaueira.com/" target="_blank" class="fornecedor-card">
+      <picture>
+        
+        <img src="imagens/itaueira.png" alt="Itaueira" loading="lazy">
+      </picture>
+      </a>
+
+      <a href="https://www.brazilmelon.com/" target="_blank" class="fornecedor-card">
+      <picture>
+        
+        <img src="imagens/brazilmelon.png" alt="brazilmelon" loading="lazy">
+      </picture>
+      </a>
+      </div>
+      </div>
+      <div class="container">
+        <h2 class="section-title">Nossos Clientes</h2>
+        <p class="section-subtitle">Atendemos diversos segmentos que valorizam qualidade, frescor e um atendimento ágil.</p>
+        
+        <div class="products-grid">
+            <div class="product-card">
+                <h3>Restaurantes e Hotéis</h3>
+                <p>Atendemos estabelecimentos gastronômicos que buscam ingredientes frescos e selecionados para oferecer o melhor aos seus clientes.</p>
+            </div>
+            
+            <div class="product-card">
+                <h3>Supermercados e Sacolões</h3>
+                <p>Fornecemos hortifruti em larga escala com qualidade e pontualidade, garantindo variedade nas gôndolas e prateleiras.</p>
+            </div>
+            
+            <div class="product-card">
+                <h3>Escolas, Hospitais e Instituições</h3>
+                <p>Atendemos instituições que prezam por uma alimentação saudável e balanceada, com produtos frescos e de qualidade.</p>
+            </div>
+        </div>
+     </div>
+
+     <div class="fornecedores-cards">
+     <a href="https://www.savegnago.com.br/?srsltid=AfmBOoriEogHEx1LT2WNTK0t-aBhTJJKk2fwf1mD738XhoaKD6jbtIOk" target="_blank" class="fornecedor-card">
+      <picture>
+        
+        <img src="imagens/savegnago.png" alt="savegnago" loading="lazy">
+      </picture>
+     </a>
+
+     <a href="https://www.paodeacucar.com/?utm_source=Google&utm_medium=pmax&utm_campaign=pda-ele-performance-google-performance-max-plusemdestaque-sp&utm_term=generico&ef_id=EAIaIQobChMIhLWkp8_4jQMV_itECB0wmDhdEAAYASAAEgLM9PD_BwE:G:s&s_kwcid=AL!912!3!!!!x!!&utm_source=Google&utm_medium=pmax&utm_campaign=pda-ele-performance-google-performance-max-plus-destaque-sp&gad_source=1&gad_campaignid=21205780759&gbraid=0AAAAABdYaBI8VvxovHLj3npSxIXy3AclL&gclid=EAIaIQobChMIhLWkp8_4jQMV_itECB0wmDhdEAAYASAAEgLM9PD_BwE" target="_blank" class="fornecedor-card">
+      <picture>
+        <source srcset="imagens/paodeacucar.webp" type="image/webp">
+        <img src="imagens/paodeacucar.png" alt="paodeacucar" loading="lazy">
+      </picture>
+      </a>
+     </div>
+
+     <div style="display: flex; justify-content: center; margin-top: 80px;">
+            <a href="sobrenos.html" class="cta-button">Conheça mais a Frutamina</a>
+        </div>
+     </div>
+    </section>
+    
+    <!-- Grupo De Marchi -->
+    
+    <section id="demarchi" class="demarchi-section section">
+        <div class="container">
+            <h2 class="section-title">Grupo De Marchi</h2>
+            <div class="demarchi-content">
+                <p>A Frutamina tem orgulho de fazer parte do Grupo De Marchi, uma empresa com mais de 70 anos de tradição no mercado de alimentos. Essa parceria nos permite oferecer ainda mais qualidade, segurança e inovação em nossos produtos e serviços.</p>
+                <p>O Grupo De Marchi é reconhecido pela excelência em seus processos e pelo compromisso com a satisfação do cliente, valores que compartilhamos e aplicamos em todas as nossas operações.</p>
+            </div>
+        </div>
+    </section>
+
+  
+    <!-- Contato -->
+    <section id="contato" class="contact section">
+        <div class="container">
+            <h2 class="section-title">Entre em Contato</h2>
+            <p class="section-subtitle">Estamos prontos para atender você. Escolha a melhor forma de contato:</p>
+            
+            <div class="contact-info">
+                <div class="contact-item">
+                    <i class="fas fa-phone-alt"></i>
+                    <h3>Telefone</h3>
+                    <p>(11) 99999-9999</p>
+                </div>
+                
+                <div class="contact-item">
+                    <i class="fas fa-envelope"></i>
+                    <h3>Email</h3>
+                    <p>contato@frutaminacompany.com.br</p>
+                </div>
+
+                 <div class="contact-item">
+                    <i class="fab fa-instagram"></i>
+                    <h3>Instagram</h3>
+                    <p><a href="https://www.instagram.com/frutamina.oficial/" target="_blank">@frutamina.oficial</a></p>
+                </div>
+
+                <div class="contact-item">
+                    <i class="fab fa-tiktok"></i>
+                    <h3>TikTok</h3>
+                    <p><a href="https://www.tiktok.com/@frutamina.oficial?is_from_webapp=1&sender_device=pc" target="_blank">@frutamina.oficial</a></p>
+                </div>
+
+                
+                <div class="contact-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <h3>Endereço CEAGESP</h3>
+                    <p>Avenida Doutor Gastão Vidigal, 1946, Vila Leopoldina, São Paulo –SP (CEAGESP - PAV. MFE-B Mods. 22 a 27 e PAV. HFN BOX 170A e 170B) CEP:05316-900</p>
+                </div>
+
+                <div class="contact-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <h3>Endereço CD</h3>
+                    <p>Avenida Lourenço Beloli, 1539 - Parque Industrial Mazzei, Galpões G4 ao G7 - Frutamina - Vila Menck, Osasco/SP - CEP 06.268-110</p>
+                </div>
+
+            </div>
+            <!-- Mapas Google: CEAGESP e CD -->
+            <div style="margin: 40px 0; display: flex; flex-wrap: wrap; gap: 32px; justify-content: center; align-items: flex-start;">
+                <div style="flex:1; min-width:320px; max-width: 700px;">
+                    <h4 style="margin-bottom:8px; color:#25632b; font-family:Montserrat,sans-serif; font-size:1.3rem; font-weight:800;">Frutamina no CEAGESP</h4>
+                    <iframe title="Frutamina no CEAGESP" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.964282073839!2d-46.737819!3d-23.532588!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce5d1e2e2e2e2e%3A0x7e7e7e7e7e7e7e7e!2sAvenida%20Doutor%20Gast%C3%A3o%20Vidigal%2C%201946%20-%20Vila%20Leopoldina%2C%20S%C3%A3o%20Paulo%20%E2%80%93%20SP%2C%2005316-900!5e0!3m2!1spt-BR!2sbr!4v1718641111111!5m2!1spt-BR!2sbr" width="100%" height="300" style="border:0; border-radius:12px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+                <div style="flex:1; min-width:320px; max-width: 700px;">
+                    <h4 style="margin-bottom:8px; color:#25632b; font-family:Montserrat,sans-serif; font-size:1.3rem; font-weight:800;">Centro de Distribuição (CD)</h4>
+                    <iframe title="Mapa Frutamina CD" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.964282073839!2d-46.79900068447444!3d-23.52007096701013!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ceffb2e2e2e2e3%3A0x7e7e7e7e7e7e7e7e!2sAvenida%20Louren%C3%A7o%20Beloli%2C%201539%20-%20Vila%20Menck%2C%20Osasco%20-%20SP%2C%2006268-110!5e0!3m2!1spt-BR!2sbr!4v1718641111111!5m2!1spt-BR!2sbr" width="100%" height="300" style="border:0; border-radius:12px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Frutamina. Todos os direitos reservados.</p>
+        </div>
+
+        <div class="footer-quicklinks" style="margin-bottom: 18px;">
+            <a href="#home" style="color: white; margin: 0 12px; text-decoration: underline, !important; font-size: 1rem;">Home</a>
+            <a href="#sobre" style="color: white; margin: 0 12px; text-decoration: underline, !important; font-size: 1rem;">Sobre</a>
+            <a href="#produtos" style="color: white; margin: 0 12px; text-decoration: underline, !important; font-size: 1rem;">Produtos</a>
+            <a href="#contato" style="color: white; margin: 0 12px; text-decoration: underline, !important; font-size: 1rem;">Contato</a>
+        </div>
+
+        <div style="margin-top: 15px;">
+                <a href="https://www.instagram.com/frutamina.oficial/" target="_blank" style="color: white; margin: 0 10px; font-size: 1.5rem; text-decoration: none;">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="https://www.tiktok.com/@frutamina.oficial?is_from_webapp=1&sender_device=pc" target="_blank" style="color: white; margin: 0 10px; font-size: 1.5rem; text-decoration: none;">
+                    <i class="fab fa-tiktok"></i>
+                </a>
+            </div>
+
+    </footer>
+
+    <!-- Google Analytics -->
+    <!-- Para ativar o Google Analytics, substitua 'GA_MEASUREMENT_ID' pelo seu ID de medição do Google Analytics -->
+    <!--
+    <script async src="https://www.googletagmanager.com/gtag/js?id=GA_MEASUREMENT_ID"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'GA_MEASUREMENT_ID');
+    </script>
+    -->
+
+    <!-- Botão Voltar ao Topo -->
+    <button id="backToTop" aria-label="Voltar ao topo" title="Voltar ao topo">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script>
+    // Botão Voltar ao Topo
+    const backToTopBtn = document.getElementById('backToTop');
+    window.addEventListener('scroll', function() {
+        if (window.scrollY > 300) {
+            backToTopBtn.style.display = 'flex';
+        } else {
+            backToTopBtn.style.display = 'none';
+        }
+    });
+    backToTopBtn.addEventListener('click', function() {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+
+    // Menu Hamburguer
+const hamburgerBtn = document.getElementById('hamburgerBtn');
+const navMenu = document.getElementById('mainNav');
+
+function toggleMenu() {
+    const expanded = hamburgerBtn.getAttribute('aria-expanded') === 'true';
+    hamburgerBtn.setAttribute('aria-expanded', !expanded);
+    navMenu.classList.toggle('open');
+    hamburgerBtn.classList.toggle('open');
+}
+hamburgerBtn.addEventListener('click', toggleMenu);
+// Fecha menu ao clicar em um link (mobile)
+document.querySelectorAll('.nav-link').forEach(link => {
+    link.addEventListener('click', () => {
+        if(window.innerWidth <= 900) {
+            navMenu.classList.remove('open');
+            hamburgerBtn.classList.remove('open');
+            hamburgerBtn.setAttribute('aria-expanded', 'false');
+        }
+    });
+});
+    </script>
+
+    <style>
+    #backToTop {
+        position: fixed;
+        bottom: 32px;
+        right: 32px;
+        z-index: 2000;
+        background: var(--accent-blue);
+        color: #fff;
+        border: none;
+        border-radius: 50%;
+        width: 52px;
+        height: 52px;
+        box-shadow: 0 4px 16px rgba(0,0,0,0.18);
+        display: none;
+        align-items: center;
+        justify-content: center;
+        font-size: 1.7rem;
+        cursor: pointer;
+        transition: background 0.2s, transform 0.2s;
+        outline: none;
+    }
+    #backToTop:focus {
+        outline: 2px solid var(--primary-green);
+        outline-offset: 2px;
+    }
+    #backToTop:hover {
+        background: var(--accent-blue-hover);
+        transform: translateY(-3px) scale(1.08);
+    }
+    @media (max-width: 600px) {
+        #backToTop {
+            right: 16px;
+            bottom: 16px;
+            width: 44px;
+            height: 44px;
+            font-size: 1.3rem;
+        }
+    }
+    </style>
+</body>
+</html>

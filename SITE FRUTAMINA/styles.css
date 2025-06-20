@@ -1,0 +1,1096 @@
+/* Reset e configurações básicas */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    /* Cores principais */
+    --primary-green: #2c5530;
+    --secondary-green: #4a7c59;
+    --light-green: #6b9b76;
+    --accent-blue: #2563eb;
+    --accent-blue-hover: #1d4ed8;
+    
+    /* Cores neutras */
+    --text-dark: #2d3748;
+    --text-medium: #4a5568;
+    --text-light: #718096;
+    --bg-light: #f7fafc;
+    --bg-white: #ffffff;
+    --border-light: #e2e8f0;
+    
+    /* Tipografia */
+    --font-heading: 'Montserrat', sans-serif;
+    --font-body: 'Open Sans', sans-serif;
+    
+    /* Sombras */
+    --shadow-sm: 0 1px 3px 0 rgba(0, 0, 0, 0.1 ), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+    --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+    --shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+    
+    /* Transições */
+    --transition-fast: 0.15s ease-in-out;
+    --transition-normal: 0.3s ease-in-out;
+    --transition-slow: 0.5s ease-in-out;
+}
+
+body {
+    font-family: var(--font-body);
+    line-height: 1.7;
+    color: var(--text-dark);
+    background-color: var(--bg-white);
+    font-weight: 400;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 24px;
+}
+
+/* Smooth scrolling */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Header */
+.header {
+    background: var(--bg-white);
+    padding: 20px 0;
+    box-shadow: var(--shadow-md);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    transition: var(--transition-normal);
+}
+
+.nav-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+
+.logo {
+    flex: 0 0 auto;
+}
+
+.logo-img {
+    height: 65px;
+    width: auto;
+    transition: var(--transition-normal);
+}
+
+.logo-img:hover {
+    transform: scale(1.05);
+}
+
+/* Menu de navegação */
+.nav-menu {
+    display: flex;
+    gap: 40px;
+    align-items: center;
+    flex: 1;
+    justify-content: center;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: var(--text-dark);
+    font-weight: 500;
+    font-size: 16px;
+    padding: 12px 20px;
+    border-radius: 8px;
+    transition: var(--transition-normal);
+    position: relative;
+    font-family: var(--font-heading);
+}
+
+.nav-link::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 8px;
+    left: 50%;
+    background-color: var(--primary-green);
+    transition: var(--transition-normal);
+    transform: translateX(-50%);
+}
+
+.nav-link:hover {
+    color: var(--primary-green);
+    background-color: rgba(44, 85, 48, 0.05);
+}
+
+.nav-link:hover::after {
+    width: 60%;
+}
+
+.nav-link.active {
+    background-color: var(--primary-green);
+    color: white;
+}
+
+.nav-link.active::after {
+    width: 0;
+}
+
+/* Logo De Marchi */
+.logo-demarchi {
+    flex: 0 0 auto;
+}
+
+.demarchi-img {
+    height: 85px;
+    width: auto;
+    transition: var(--transition-normal);
+}
+
+.demarchi-img:hover {
+    transform: scale(1.05);
+}
+
+/* Hero Section */
+.hero {
+    background: linear-gradient(135deg, var(--primary-green) 0%, var(--secondary-green) 50%, var(--light-green) 100%);
+    color: white;
+    padding: 120px 0;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="grain" width="100" height="100" patternUnits="userSpaceOnUse"><circle cx="25" cy="25" r="1" fill="white" opacity="0.1"/><circle cx="75" cy="75" r="1" fill="white" opacity="0.1"/><circle cx="50" cy="10" r="0.5" fill="white" opacity="0.1"/><circle cx="10" cy="60" r="0.5" fill="white" opacity="0.1"/><circle cx="90" cy="40" r="0.5" fill="white" opacity="0.1"/></pattern></defs><rect width="100" height="100" fill="url(%23grain )"/></svg>');
+    pointer-events: none;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 1;
+}
+
+.hero-title {
+    font-family: var(--font-heading);
+    font-size: 3.5rem;
+    font-weight: 800;
+    margin-bottom: 24px;
+    line-height: 1.1;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.hero-subtitle {
+    font-size: 1.3rem;
+    margin-bottom: 40px;
+    opacity: 0.95;
+    font-weight: 300;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.cta-button {
+    display: inline-block;
+    background: var(--accent-blue);
+    color: white;
+    padding: 18px 36px;
+    text-decoration: none;
+    border: none;
+    border-radius: 50px;
+    font-weight: 600;
+    font-size: 16px;
+    font-family: var(--font-heading);
+    transition: var(--transition-normal);
+    box-shadow: var(--shadow-lg);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    max-width: 400px;
+    width: 100%;
+    text-align: center;
+}
+
+.cta-button:hover {
+    background: var(--accent-blue-hover);
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-xl);
+}
+
+/* Seções gerais */
+.section {
+    padding: 100px 0;
+}
+
+.section-title {
+    font-family: var(--font-heading);
+    font-size: 2.8rem;
+    text-align: center;
+    margin-bottom: 20px;
+    color: var(--primary-green);
+    font-weight: 700;
+    position: relative;
+}
+
+.section-title::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 4px;
+    background: linear-gradient(90deg, var(--accent-blue), var(--accent-blue-hover));
+    border-radius: 2px;
+}
+
+.section-subtitle {
+    text-align: center;
+    font-size: 1.2rem;
+    margin-bottom: 60px;
+    color: var(--text-medium);
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    font-weight: 300;
+}
+
+/* Sobre Nós */
+.about {
+    background: var(--bg-light);
+}
+
+.about-content {
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.about-content p {
+    font-size: 1.15rem;
+    margin-bottom: 28px;
+    line-height: 1.8;
+    color: var(--text-medium);
+}
+
+.about-content p:last-child {
+    margin-bottom: 0;
+}
+
+/* Produtos */
+.products {
+    background: var(--bg-white);
+}
+
+.products-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 60px;
+    margin-bottom: 60px;
+}
+
+.product-card {
+    background: white;
+    padding: 40px 30px;
+    border-radius: 16px;
+    box-shadow: var(--shadow-md);
+    text-align: center;
+    transition: var(--transition-normal);
+    border: 1px solid var(--border-light);
+    position: relative;
+    overflow: hidden;
+    margin-top: 30px;
+}
+
+.product-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: linear-gradient(90deg, var(--primary-green), var(--secondary-green));
+}
+
+.product-card:hover {
+    transform: translateY(-8px);
+    box-shadow: var(--shadow-xl);
+}
+
+.product-card h3 {
+    font-family: var(--font-heading);
+    font-size: 1.6rem;
+    color: var(--primary-green);
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+.product-card p {
+    margin-bottom: 30px;
+    line-height: 1.7;
+    color: var(--text-medium);
+    font-size: 1rem;
+}
+
+.product-link {
+    display: inline-block;
+    background: var(--primary-green);
+    color: white;
+    padding: 12px 28px;
+    text-decoration: none;
+    border-radius: 25px;
+    font-weight: 600;
+    font-size: 14px;
+    font-family: var(--font-heading);
+    transition: var(--transition-normal);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.product-link:hover {
+    background: var(--secondary-green);
+    transform: translateY(-1px);
+}
+
+.products-info {
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.products-info p {
+    font-size: 1.15rem;
+    margin-bottom: 20px;
+    line-height: 1.8;
+    color: var(--text-medium);
+}
+
+/* Grupo De Marchi */
+.demarchi-section {
+    background: var(--bg-light);
+}
+
+.demarchi-content {
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.demarchi-content p {
+    font-size: 1.15rem;
+    margin-bottom: 28px;
+    line-height: 1.8;
+    color: var(--text-medium);
+}
+
+/* Contato */
+.contact {
+    background: var(--bg-white);
+}
+
+.contact-info {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 50px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.contact-item {
+    text-align: center;
+    padding: 40px 30px;
+    background: white;
+    border-radius: 16px;
+    box-shadow: var(--shadow-md);
+    transition: var(--transition-normal);
+    border: 1px solid var(--border-light);
+}
+
+.contact-item:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-lg);
+}
+
+.contact-item i {
+    font-size: 2.5rem;
+    color: var(--accent-blue);
+    margin-bottom: 20px;
+    display: block;
+}
+
+.contact-item h3 {
+    font-family: var(--font-heading);
+    font-size: 1.4rem;
+    color: var(--primary-green);
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+
+.contact-item p {
+    font-size: 1.1rem;
+    line-height: 1.7;
+    color: var(--text-medium);
+}
+
+/* Footer */
+.footer {
+    background: var(--primary-green);
+    color: white;
+    padding: 30px 0;
+    text-align: center;
+}
+
+.footer p {
+    font-size: 1rem;
+    opacity: 0.9;
+}
+
+/* Animações */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.fade-in-up {
+    animation: fadeInUp 0.6s ease-out;
+}
+
+/* styles.css - Responsivo para SITE FRUTAMINA */
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #f8f8f8;
+  color: #222;
+}
+
+header {
+  width: 100%;
+  background: #fff;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+  border-radius: 0;
+  padding: 0;
+  position: relative;
+  z-index: 10;
+}
+
+.header .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 90px;
+}
+
+.logo {
+  flex: 0 0 auto;
+  display: flex;
+  align-items: center;
+}
+
+.logo-img {
+  height: 65px;
+  width: auto;
+}
+
+.nav-menu {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+  margin-left: auto;
+}
+
+logo-demarchi {
+  flex: 0 0 auto;
+  margin-left: 2rem;
+  display: flex;
+  align-items: center;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+  background: none;
+  border-radius: 0;
+  padding: 0;
+  margin: 0;
+  box-shadow: none;
+}
+
+nav a {
+  background: none;
+  color: #2a7a2a;
+  font-weight: 500;
+  padding: 0.5rem 1.2rem;
+  border-radius: 6px;
+  font-size: 1.1rem;
+  transition: background 0.2s, color 0.2s;
+}
+
+nav a.active, nav a:focus {
+  background: #2a7a2a;
+  color: #fff;
+}
+
+nav a:hover {
+  background: #e0ffe0;
+  color: #25632b;
+}
+
+main {
+  padding: 2rem 1rem;
+}
+
+footer {
+  background: #2a7a2a;
+  color: #fff;
+  text-align: center;
+  border-radius: 8px;
+  margin-top: 2rem;
+}
+
+@media (max-width: 1200px) {
+  .header .container {
+    padding: 0 10px;
+  }
+}
+
+@media (max-width: 900px) {
+  .header .container {
+    flex-direction: column;
+    gap: 10px;
+    min-height: unset;
+    padding: 0 6px;
+  }
+  .nav-menu {
+    margin-left: 0;
+    gap: 1rem;
+  }
+  .logo-demarchi {
+    margin-left: 0;
+    margin-top: 10px;
+  }
+}
+
+@media (max-width: 768px) {
+  .header .container {
+    flex-direction: column;
+    gap: 16px;
+    min-height: unset;
+    padding: 0 6px;
+  }
+  nav {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  main {
+    padding: 1rem 0.2rem;
+  }
+  nav a {
+    padding: 0.5rem 0.7rem;
+    font-size: 1rem;
+  }
+  .nav-menu {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+}
+
+@media (max-width: 1024px) {
+    .container {
+        padding: 0 20px;
+    }
+    
+    .nav-menu {
+        gap: 30px;
+    }
+    
+    .hero-title {
+        font-size: 3rem;
+    }
+    
+    .section-title {
+        font-size: 2.4rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .nav-wrapper {
+        flex-direction: column;
+        gap: 25px;
+    }
+    
+    .nav-menu {
+        flex-direction: column;
+        gap: 20px;
+    }
+    
+    .hero {
+        padding: 80px 0;
+    }
+    
+    .hero-title {
+        font-size: 2.2rem;
+    }
+    
+    .hero-subtitle {
+        font-size: 1.1rem;
+    }
+    
+    .section {
+        padding: 60px 0;
+    }
+    
+    .section-title {
+        font-size: 2rem;
+    }
+    
+    .products-grid {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+    
+    .contact-info {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+    
+    .contact-item {
+        padding: 30px 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding: 0 16px;
+    }
+    
+    .hero {
+        padding: 60px 0;
+    }
+    
+    .hero-title {
+        font-size: 1.8rem;
+    }
+    
+    .section-title {
+        font-size: 1.8rem;
+    }
+    
+    .section {
+        padding: 50px 0;
+    }
+    
+    .product-card,
+    .contact-item {
+        padding: 25px 20px;
+    }
+    
+    .cta-button {
+        padding: 15px 30px;
+        font-size: 14px;
+    }
+}
+
+/* Melhorias de acessibilidade */
+@media (prefers-reduced-motion: reduce) {
+    * {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
+    
+    html {
+        scroll-behavior: auto;
+    }
+}
+
+/* Estados de foco para acessibilidade */
+.nav-link:focus,
+.cta-button:focus,
+.product-link:focus {
+    outline: 2px solid var(--accent-blue);
+    outline-offset: 2px;
+}
+
+.fornecedor-card img {
+    max-width: 190px;
+    max-height: 90px;
+    object-fit: contain;
+  }
+
+  .fornecedores-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 32px;
+    justify-content: center;
+    margin-top: 32px;
+  }
+
+  .fornecedor-card {
+    background: #fff;
+    border-radius: 18px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+    padding: 28px 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 220px;
+    min-height: 120px;
+    transition: transform 0.2s, box-shadow 0.2s;
+    text-decoration: none;
+    margin: 0;
+  }
+
+  .fornecedor-card:hover {
+    transform: translateY(-4px) scale(1.04);
+    box-shadow: 0 6px 24px rgba(0,0,0,0.13);
+  }
+
+  .fornecedor-card img {
+    max-width: 180px;
+    max-height: 80px;
+    object-fit: contain;
+    display: block;
+  }
+
+  .clientes-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 32px;
+    justify-content: center;
+    margin-top: 32px;
+  }
+  .cliente-card {
+    background: #fff;
+    border-radius: 18px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+    padding: 28px 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 220px;
+    min-height: 120px;
+    transition: transform 0.2s, box-shadow 0.2s;
+    margin: 0;
+  }
+  .cliente-card img {
+    max-width: 180px;
+    max-height: 80px;
+    object-fit: contain;
+    display: block;
+  }
+
+  /* Grid para variedades de melão: 4 por linha em telas grandes */
+.varieties-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 32px;
+    margin-top: 32px;
+}
+
+/* Ajuste responsivo para telas menores */
+@media (max-width: 1024px) {
+  .varieties-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 600px) {
+  .varieties-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Deixa os cards menores para caberem 4 por linha */
+.varieties-grid .product-card {
+    padding: 24px 12px;
+    font-size: 0.95rem;
+}
+.varieties-grid .variety-image {
+    margin-bottom: 12px;
+}
+.varieties-grid .variety-name {
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+}
+
+/* Fundo suave para a seção de variedades */
+.varieties.section {
+    background: #f5f7fa;
+    padding-top: 56px;
+    padding-bottom: 56px;
+    border-radius: 24px;
+    margin-bottom: 48px;
+}
+
+/* Cards mais harmônicos */
+.varieties-grid .product-card {
+    background: #fff;
+    border-radius: 18px;
+    box-shadow: 0 2px 12px 0 rgba(44,85,48,0.07);
+    padding: 28px 14px 24px 14px;
+    min-height: 340px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    transition: box-shadow 0.2s, transform 0.2s;
+}
+.varieties-grid .product-card:hover {
+    box-shadow: 0 8px 24px 0 rgba(44,85,48,0.13);
+    transform: translateY(-4px) scale(1.03);
+}
+
+.varieties-grid .variety-image {
+    width: 110px;
+    height: 110px;
+    border-radius: 50%;
+    background: #e6ede7;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 16px;
+    overflow: hidden;
+    transition: transform 0.25s cubic-bezier(.4,2,.6,1);
+}
+.varieties-grid .placeholder {
+    color: #7ca88a;
+    font-size: 0.95rem;
+    text-align: center;
+    padding: 0 6px;
+}
+.varieties-grid .variety-name {
+    font-size: 1.08rem;
+    margin-bottom: 8px;
+    font-weight: 700;
+    color: var(--primary-green);
+    letter-spacing: 0.01em;
+}
+.varieties-grid .variety-info {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 100%;
+}
+.varieties-grid .variety-info p {
+    margin-bottom: 8px;
+    font-size: 0.97rem;
+    color: var(--text-medium);
+}
+
+/* 1. Borda sutil e sombra na imagem */
+.varieties-grid .variety-image {
+    border: 3px solid #fff;
+    box-shadow: 0 2px 12px 0 rgba(44,85,48,0.10);
+}
+
+/* 3. Gradiente de fundo nos cards */
+.varieties-grid .product-card {
+    background: linear-gradient(135deg, #f5f7fa 60%, #e6ede7 100%);
+}
+
+/* 4. Transição suave no texto ao passar o mouse */
+.varieties-grid .product-card {
+    transition: box-shadow 0.2s, transform 0.2s, color 0.2s;
+}
+.varieties-grid .product-card:hover .variety-name {
+    color: #2563eb;
+    text-shadow: 0 2px 8px rgba(44,85,48,0.08);
+}
+.varieties-grid .product-card:hover .variety-info p {
+    color: var(--primary-green);
+}
+
+/* Garante altura igual dos cards */
+.varieties-grid {
+    align-items: stretch;
+}
+
+/* Espaçamento entre seções */
+.section + .section {
+    margin-top: 56px;
+}
+
+/* Efeito de zoom suave ao passar o mouse na imagem do melão */
+.varieties-grid .variety-image {
+    transition: transform 0.25s cubic-bezier(.4,2,.6,1);
+}
+.varieties-grid .variety-image:hover {
+    transform: scale(1.18);
+    box-shadow: 0 4px 24px 0 rgba(44,85,48,0.18);
+    z-index: 2;
+}
+
+/* Destaque especial para seção de melões */
+.about-melons-highlight {
+    background: var(--bg-light);
+    border: 1.5px solid var(--border-light);
+    border-radius: 18px;
+    box-shadow: var(--shadow-md);
+    padding: 40px 32px 32px 32px;
+    display: flex;
+    align-items: center;
+    gap: 48px;
+    margin-bottom: 40px;
+    margin-top: 24px;
+    justify-content: center;
+}
+
+.about-melons-highlight .about-text {
+    flex: 2;
+    text-align: left;
+}
+
+.about-melons-highlight .about-image {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.melon-img {
+    max-width: 220px;
+    width: 100%;
+    border-radius: 16px;
+    box-shadow: var(--shadow-lg);
+    border: 2px solid var(--border-light);
+    background: white;
+}
+
+.benefits-list.icons {
+    list-style: none;
+    padding-left: 0;
+    margin-top: 32px;
+}
+.benefits-list.icons li {
+    font-size: 1.13rem;
+    margin-bottom: 16px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    color: var(--primary-green);
+    font-weight: 500;
+}
+.benefits-list.icons li i {
+    color: var(--accent-blue);
+    font-size: 1.3em;
+    min-width: 28px;
+}
+
+@media (max-width: 900px) {
+    .about-melons-highlight {
+        flex-direction: column;
+        padding: 32px 12px;
+        gap: 24px;
+    }
+    .about-melons-highlight .about-text {
+        text-align: center;
+    }
+}
+
+/* Botão grande e centralizado igual ao 'OUTROS PRODUTOS' */
+.cta-section .cta-button {
+    min-width: 320px;
+    padding: 18px 0;
+    font-size: 1.13rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    display: block;
+    margin: 40px auto 0 auto;
+    text-align: center;
+}
+
+/* Grid e cards de dicas */
+.tips-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+    gap: 32px;
+    margin-top: 40px;
+    margin-bottom: 24px;
+}
+.tip-card {
+    background: var(--bg-light);
+    border-radius: 16px;
+    box-shadow: var(--shadow-md);
+    padding: 32px 28px 26px 28px;
+    border: 1.5px solid var(--border-light);
+    transition: box-shadow 0.18s, transform 0.18s;
+    text-align: left;
+    min-height: 180px;
+    position: relative;
+}
+.tip-card:hover {
+    box-shadow: var(--shadow-xl);
+    transform: translateY(-4px) scale(1.02);
+    border-color: var(--accent-blue);
+    background: #f0f8ff;
+}
+.tip-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, #e0f7fa 60%, #f7fafc 100%);
+    border-radius: 50%;
+    width: 48px;
+    height: 48px;
+    margin-bottom: 14px;
+    box-shadow: 0 2px 8px 0 rgba(44,85,48,0.07);
+    font-size: 1.7rem;
+}
+.tip-icon i {
+    color: var(--accent-blue);
+    transition: color 0.18s;
+}
+.tip-card:hover .tip-icon i {
+    color: var(--primary-green);
+}
+.tip-card h3 {
+    color: var(--primary-green);
+    font-size: 1.25rem;
+    font-family: var(--font-heading);
+    margin-bottom: 10px;
+    font-weight: 700;
+}
+.tip-card p {
+    color: var(--text-medium);
+    font-size: 1.07rem;
+    line-height: 1.7;
+}
+@media (max-width: 700px) {
+    .tips-grid {
+        grid-template-columns: 1fr;
+        gap: 18px;
+    }
+    .tip-card {
+        padding: 22px 12px 18px 12px;
+    }
+}
