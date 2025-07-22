@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Frutamina | Distribuidora de Frutas</title>
+  <meta name="description" content="A Frutamina é sua parceira ideal na distribuição de frutas frescas e de alta qualidade em São Paulo e região.">
+  <meta name="keywords" content="distribuidora frutas, frutas, atacado, são paulo, ceagesp">
+  <meta name="author" content="Frutamina">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+
+  <!-- AOS (Animate On Scroll) -->
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
+  <!-- Swiper -->
+  <link href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- GLightbox -->
+  <link href="https://cdn.jsdelivr.net/npm/glightbox@3.3.0/dist/css/glightbox.min.css" rel="stylesheet">
+
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+
+</head>
+
+<body class="index-page">
+
+  <header id="header" class="header d-flex align-items-center sticky-top">
+    <div class="container-fluid container-xl position-relative d-flex align-items-center">
+
+      <a href="index.html" class="logo d-flex align-items-center me-auto">
+        <img src="imagens/logos/logo-menu.png" alt="Frutamina Logo">
+      </a>
+
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="#hero-2" class="active">Início</a></li>
+          <li><a href="#about">Sobre</a></li>
+          <li><a href="#services">Serviços</a></li>
+          <li><a href="#portfolio">Produtos</a></li>
+          <li><a href="#team">Equipe</a></li>
+          <li><a href="#contact">Contato</a></li>
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
+
+      <button id="toggle-darkmode" class="btn-getstarted" type="button" aria-label="Alternar modo escuro/claro">
+        <i class="bi bi-moon" id="icon-moon"></i>
+        <i class="bi bi-sun" id="icon-sun" style="display:none;"></i>
+      </button>
+
+    </div>
+  </header>
+
+  <main class="main">
+    <section id="hero-2" class="hero-2 section dark-background">
+
+      <div id="hero-2-carousel" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="5000">
+
+        <div class="carousel-item active">
+          <img src="imagens/banner/CD.webp" alt="Banner Frutamina 1">
+          <div class="carousel-container">
+            <h2>Qualidade e Frescor</h2>
+            <p>Selecionamos os melhores produtos diretamente dos produtores para garantir o máximo de frescor e sabor para seus clientes.</p>
+            <a href="#about" class="btn-get-started">Saiba Mais</a>
+          </div>
+        </div><!-- End Carousel Item -->
+
+        <div class="carousel-item">
+          <img src="imagens/banner/carreta.jfif" alt="Banner Frutamina 2">
+          <div class="carousel-container">
+            <h2>Logística Eficiente</h2>
+            <p>Com nossa frota e localização estratégica no CEAGESP, garantimos entregas rápidas e seguras em toda a região.</p>
+            <a href="#services" class="btn-get-started">Nossos Serviços</a>
+          </div>
+        </div><!-- End Carousel Item -->
+
+        <div class="carousel-item">
+          <img src="imagens/banner/dc91eced-caa2-4fe1-8fc9-640b6ce42c38.jfif" alt="Banner Frutamina 3">
+          <div class="carousel-container">
+            <h2>Parceria de Confiança</h2>
+            <p>Mais do que fornecedores, somos parceiros do seu negócio, oferecendo um atendimento dedicado e os melhores produtos.</p>
+            <a href="#contact" class="btn-get-started">Fale Conosco</a>
+          </div>
+        </div><!-- End Carousel Item -->
+
+        <div class="carousel-item">
+          <img src="imagens/banner/arte melões.jfif" alt="Frutas Selecionadas">
+          <div class="carousel-container">
+            <h2>Frutas 100% Selecionadas</h2>
+            <p>Nosso processo de seleção garante que apenas as melhores frutas cheguem até você, com qualidade e sabor incomparáveis.</p>
+            <a href="#portfolio" class="btn-get-started">Ver Produtos</a>
+          </div>
+        </div><!-- End Carousel Item -->
+
+        <a class="carousel-control-prev" href="#hero-2-carousel" role="button" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon bi bi-chevron-left" aria-hidden="true"></span>
+        </a>
+
+        <a class="carousel-control-next" href="#hero-2-carousel" role="button" data-bs-slide="next">
+          <span class="carousel-control-next-icon bi bi-chevron-right" aria-hidden="true"></span>
+        </a>
+
+        <ol class="carousel-indicators"></ol>
+
+      </div>
+
+    </section><!-- /Hero 2 Section -->
+    
+    <!-- Hero Section -->
+    <section id="hero" class="hero section">
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+        <div class="row align-items-center">
+          <div class="col-lg-6">
+            <div class="hero-content" data-aos="fade-up" data-aos-delay="200">
+              <h2>O melhor do campo para o seu negócio</h2>
+              <p>Fornecemos frutas frescas com a qualidade que sua empresa precisa para crescer e encantar clientes.</p>
+              <div class="hero-btns">
+                <a href="#contact" class="btn btn-primary">Solicite um Orçamento</a>
+                <a href="#services" class="btn btn-outline">Nossos Serviços</a>
+              </div>
+              <div class="hero-stats">
+                <div class="stat-item">
+                  <h3><span data-purecounter-start="0" data-purecounter-end="20" data-purecounter-duration="1" class="purecounter"></span>+</h3>
+                  <p>Anos de Experiência</p>
+                </div>
+                <div class="stat-item">
+                  <h3><span data-purecounter-start="0" data-purecounter-end="500" data-purecounter-duration="1" class="purecounter"></span>+</h3>
+                  <p>Clientes Satisfeitos</p>
+                </div>
+                <div class="stat-item">
+                  <h3><span data-purecounter-start="0" data-purecounter-end="99" data-purecounter-duration="1" class="purecounter"></span>%</h3>
+                  <p>Qualidade Comprovada</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="hero-image" data-aos="zoom-out" data-aos-delay="300">
+              <img src="imagens/home/c4d179c5-20b3-47f0-9ef5-940903e0f5f7.jfif" alt="Consulting Services" class="img-fluid">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section><!-- /Hero Section -->
+
+    <!-- Clients Section -->
+    <section id="clients" class="clients section">
+
+      <div data-aos="fade-up" data-aos-delay="100">
+
+
+
+      </div>
+
+    </section><!-- /Clients Section -->
+
+    <!-- About Section -->
+    <section id="about" class="about section light-background">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Sobre Nós</h2>
+        <p>Distribuindo frescor e qualidade em frutas para todo o Brasil.</p>
+      </div><!-- End Section Title -->
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row gy-4 align-items-center justify-content-between">
+
+          <div class="col-xl-5" data-aos="fade-up" data-aos-delay="200">
+            <span class="about-meta">MAIS SOBRE A FRUTAMINA</span>
+            <h2 class="about-title">Especialistas na distribuição de frutas com qualidade e procedência.</h2>
+            <p class="about-description">
+              A Frutamina é uma empresa com sede em São Paulo, especializada na distribuição de frutas. Nosso compromisso é entregar produtos frescos e de alta qualidade, garantindo a satisfação de nossos clientes em todo o país.
+            </p>
+
+            <div class="about-features-center">
+            <div class="row feature-list-wrapper">
+              <div class="col-md-6">
+                <ul class="feature-list">
+                    <li><i class="bi bi-check-circle-fill"></i> Frutas frescas</li>
+                  <li><i class="bi bi-check-circle-fill"></i> Atendimento personalizado</li>
+                  <li><i class="bi bi-check-circle-fill"></i> Qualidade e procedência garantida</li>
+                </ul>
+              </div>
+              <div class="col-md-6">
+                <ul class="feature-list">
+                  <li><i class="bi bi-check-circle-fill"></i> Logística eficiente</li>
+                  <li><i class="bi bi-check-circle-fill"></i> Suporte contínuo</li>
+                  <li><i class="bi bi-check-circle-fill"></i> Ampla experiência no mercado de hortifruti</li>
+                </ul>
+              </div>
+            </div>
+            <div class="info-wrapper">
+                <div class="contact-info d-flex align-items-center justify-content-between gap-2">
+                  <div class="d-flex align-items-center gap-2">
+                    <i class="bi bi-telephone-fill"></i>
+                    <div>
+                      <p class="contact-label">Fale conosco</p>
+                      <p class="contact-number">+55 (11) 3641-4352</p>
+                    </div>
+                  </div>
+                  <div class="social-icons d-flex align-items-center gap-3">
+                    <a href="https://www.instagram.com/frutamina.oficial/" target="_blank" rel="noopener" title="Instagram"><i class="bi bi-instagram" style="font-size:2rem;"></i></a>
+                    <a href="https://www.tiktok.com/@frutamina.oficial" target="_blank" rel="noopener" title="TikTok"><i class="bi bi-tiktok" style="font-size:2rem;"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-xl-6" data-aos="fade-up" data-aos-delay="300">
+            <div class="image-wrapper">
+              <div class="images position-relative" data-aos="zoom-out" data-aos-delay="400">
+                <img src="imagens/home/31e144b5-e29f-46d5-8e28-3414b0204137.jfif" alt="Business Meeting" class="img-fluid main-image rounded-4">
+                <img src="imagens/home/307e206b-2a97-4187-b79e-f5ed9c340a87.jfif" alt="Team Discussion"
+                  class="img-fluid small-image rounded-4">
+              </div>
+              <div class="experience-badge floating">
+                <h3>20+ <span>anos</span></h3>
+                <p>Mais de 20 anos de experiência, com sólida atuação no mercado de hortifruti desde 2004.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </section><!-- /About Section -->
+
+    
+
+    <!-- Services Section -->
+    <section id="services" class="services section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Nossos Serviços</h2>
+        <p>Oferecemos soluções completas para o fornecimento de frutas, com foco na qualidade e satisfação dos nossos clientes.</p>
+      </div><!-- End Section Title -->
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row gy-4 justify-content-center">
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+            <article class="service-item">
+              <span class="service-icon rounded-circle">
+                <i class="bi bi-truck"></i>
+              </span>
+              <h3>
+                <a href="service-details.html">
+                  Distribuição <span>Eficiente</span>
+                </a>
+              </h3>
+              <p>
+                Garantimos a entrega de produtos frescos e de qualidade com uma logística rápida e eficiente para todo o Brasil.
+              </p>
+            </article>
+          </div>
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="150">
+            <article class="service-item">
+              <span class="service-icon rounded-circle">
+                <i class="bi bi-clipboard-check"></i>
+              </span>
+              <h3>
+                <a href="service-details.html">
+                  Qualidade <span>Garantida</span>
+                </a>
+              </h3>
+              <p>
+                Trabalhamos com os melhores produtores para oferecer frutas, legumes e verduras com procedência e qualidade superior.
+              </p>
+            </article>
+          </div>
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+            <article class="service-item">
+              <span class="service-icon rounded-circle">
+                <i class="bi bi-people"></i>
+              </span>
+              <h3>
+                <a href="service-details.html">
+                  Atendimento <span>Personalizado</span>
+                </a>
+              </h3>
+              <p>
+                Nossa equipe está preparada para atender às necessidades específicas de cada cliente, oferecendo um serviço atencioso e dedicado.
+              </p>
+            </article>
+          </div>
+
+        </div>
+
+      </div>
+
+    </section><!-- /Services Section -->
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Nossos Produtos</h2>
+        <p>Oferecemos uma vasta gama de frutas, sempre frescas e da mais alta qualidade.</p>
+      </div><!-- End Section Title -->
+
+      <div class="container">
+
+        <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
+
+          <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
+              <div class="portfolio-content h-100">
+                <a href="assets/img/portfolio/portfolio-1.webp" data-gallery="portfolio-gallery-app"
+                  class="glightbox"><img src="assets/img/portfolio/portfolio-1.webp" class="img-fluid" alt=""></a>
+                <div class="portfolio-info">
+                  <h4><a href="portfolio-details.html" title="More Details">Frutas</a></h4>
+                  <p>As melhores e mais frescas frutas da estação.</p>
+                </div>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+          </div><!-- End Portfolio Container -->
+
+        </div>
+
+      </div>
+
+    </section><!-- /Portfolio Section -->
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact section light-background">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Contato</h2>
+        <p>Entre em contato conosco para cotações, dúvidas ou parcerias.</p>
+      </div><!-- End Section Title -->
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row g-4 g-lg-5">
+          <div class="col-lg-5">
+            <div class="info-box" data-aos="fade-up" data-aos-delay="200">
+              <h3>Informações de Contato</h3>
+              <p>Estamos à disposição para atender você. Entre em contato por um dos canais abaixo:</p>
+
+              <div class="info-item" data-aos="fade-up" data-aos-delay="300">
+                <div class="icon-box">
+                  <i class="bi bi-geo-alt"></i>
+                </div>
+                <div class="content">
+                  <h4>Nosso Endereço</h4>
+                  <p>Avenida Doutor Gastão Vidigal, 1946 - Pav. MFEB MODULO 22 A 27 (Ceagesp)</p>
+                  <p>Vila Leopoldina, São Paulo - SP, 05316-900</p>
+                </div>
+              </div>
+
+              <div class="info-item" data-aos="fade-up" data-aos-delay="400">
+                <div class="icon-box">
+                  <i class="bi bi-telephone"></i>
+                </div>
+                <div class="content">
+                  <h4>Telefone</h4>
+                  <p>(11) 3641-4352</p>
+                </div>
+              </div>
+
+              <div class="info-item" data-aos="fade-up" data-aos-delay="500">
+                <div class="icon-box">
+                  <i class="bi bi-envelope"></i>
+                </div>
+                <div class="content">
+                  <h4>Email</h4>
+                  <p>contato@frutamina.com.br</p>
+                </div>
+              </div>
+              <div class="info-item" data-aos="fade-up" data-aos-delay="600">
+                <div class="icon-box">
+                  <i class="bi bi-instagram"></i>
+                </div>
+                <div class="content">
+                  <h4>Instagram</h4>
+                  <p><a href="https://www.instagram.com/frutamina.oficial/" target="_blank" rel="noopener">@frutamina.oficial</a></p>
+                </div>
+              </div>
+              <div class="info-item" data-aos="fade-up" data-aos-delay="700">
+                <div class="icon-box">
+                  <i class="bi bi-tiktok"></i>
+                </div>
+                <div class="content">
+                  <h4>TikTok</h4>
+                  <p><a href="https://www.tiktok.com/@frutamina.oficial" target="_blank" rel="noopener">@frutamina.oficial</a></p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-7">
+            <div class="contact-form" data-aos="fade-up" data-aos-delay="300">
+              <h3>Fale Conosco</h3>
+              <p>Envie sua mensagem e nossa equipe responderá o mais breve possível.</p>
+
+              <form action="https://script.google.com/macros/s/AKfycbyvLOy0XXre-s9r9beOsz_pgzJlvC7DHQJoT_3a6Nhw9NFBOna7LgM4V-IAKb2FoPNzhA/exec" method="post" class="php-email-form" data-aos="fade-up"
+                data-aos-delay="200">
+                <div class="row gy-4">
+
+                  <div class="col-md-6">
+                    <input id="name_contato" type="text" name="name" class="form-control" placeholder="Your Name"
+                      required="">
+                  </div>
+
+                  <div class="col-md-6">
+                    <input id="telefone_contato" type="tel" name="phone" class="form-control" placeholder="Your Phone"
+                      required>
+                  </div>
+
+                  <div class="col-md-6">
+                    <input id="ramo_contato" type="text" name="ramo" class="form-control" placeholder="Your Segment"
+                      required="">
+                  </div>
+
+                  <div class="col-md-6 ">
+                    <input id="email_contato" type="email" class="form-control" name="email" placeholder="Your Email"
+                      required="">
+                  </div>
+
+                  <div class="col-12">
+                    <input id="assunto_contato" type="text" class="form-control" name="subject" placeholder="Subject"
+                      required="">
+                  </div>
+
+                  <div class="col-12">
+                    <textarea id="mensagem_contato" class="form-control" name="message" rows="6" placeholder="Message"
+                      required=""></textarea>
+                  </div>
+
+                  <div class="col-12 text-center">
+                    <div class="loading">Loading</div>
+                    <div class="error-message"></div>
+                    <div class="sent-message">Your message has been sent. Thank you!</div>
+
+                    <button type="submit" class="btn">Send Message</button>
+                  </div>
+
+                </div>
+              </form>
+
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </section><!-- /Contact Section -->
+
+  </main>
+
+  <footer id="footer" class="footer dark-background">
+    <div class="container footer-top">
+      <div class="row gy-4">
+        <div class="col-lg-4 col-md-6 footer-about">
+          <a href="index.html" class="d-flex align-items-center">
+            <span class="sitename">Frutamina</span>
+          </a>
+          <div class="footer-contact pt-3">
+            <p>Avenida Doutor Gastão Vidigal, 1946</p>
+            <p>São Paulo, SP 05316-900</p>
+            <p class="mt-3"><strong>Telefone:</strong> <span>(11) 3641-4352</span></p>
+            <p><strong>Email:</strong> <span>contato@frutamina.com.br</span></p>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-3 footer-links">
+          <h4>Acesso Rápido</h4>
+          <ul>
+            <li><i class="bi bi-chevron-right"></i> <a href="#hero-2">Início</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="#about">Sobre</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="#services">Serviços</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="#portfolio">Produtos</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="#contact">Contato</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-4 col-md-12">
+          <h4>Redes Sociais</h4>
+          <div class="social-links d-flex">
+            <a href="https://www.instagram.com/frutamina.oficial/" target="_blank" rel="noopener"><i class="bi bi-instagram"></i></a>
+            <a href="https://www.tiktok.com/@frutamina.oficial" target="_blank" rel="noopener"><i class="bi bi-tiktok"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container copyright text-center mt-4">
+      <p>© <span>2025</span> <strong class="px-1 sitename">Frutamina</strong> <span>Todos os Direitos Reservados.</span></p>
+      <div class="credits">
+        Desenvolvimento por <a href="">Frutamina</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center">
+    <i class="bi bi-arrow-up-short"></i>
+  </a>
+
+  <!-- JS Files -->
+
+  <script src="assets/js/validate.js"></script>
+
+  <!-- Bootstrap Bundle (inclui Popper) -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- AOS (Animate On Scroll) -->
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+
+  <!-- PureCounter (contadores animados) -->
+  <script src="https://cdn.jsdelivr.net/npm/@srexi/purecounterjs@1.5.0/dist/purecounter_vanilla.js"></script>
+
+  <!-- Swiper (sliders/carrosséis) -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11.2.8/swiper-bundle.min.js"></script>
+
+  <!-- GLightbox (galeria/lightbox) -->
+  <script src="https://cdn.jsdelivr.net/npm/glightbox@3.3.1/dist/js/glightbox.min.js"></script>
+
+  <!-- imagesLoaded (detecção de carregamento de imagens) -->
+  <script src="https://cdn.jsdelivr.net/npm/imagesloaded@5.0.0/imagesloaded.pkgd.min.js"></script>
+
+  <!-- Isotope (filtros/grade dinâmica) -->
+  <script src="https://cdn.jsdelivr.net/npm/isotope-layout@3.0.6/dist/isotope.pkgd.min.js"></script>
+
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
